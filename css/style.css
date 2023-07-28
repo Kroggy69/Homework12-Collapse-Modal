@@ -1,0 +1,60 @@
+body {
+    height: 150vh;
+}
+
+.icon-bg {
+    width: 35px!important;
+    height: 35px !important;
+    line-height: 35px;
+}
+
+.content p{
+    position: relative;
+}
+
+.content p::before{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: #e2e3e5;
+    top: 18px;
+    left: -34px;
+}
+
+.title,
+.fa-circle-plus {
+    transition: .3s;
+}
+
+.title:hover,
+.fa-circle-plus:hover {
+    color: teal;
+}
+
+.chevron {
+    position: relative;
+}
+
+.chevron::after {
+    position: absolute;
+    font-family: "Font Awesome 6 free";
+    content: '\f078';
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #d1d3e2;
+}
+.collapsed .chevron::after {
+    position: absolute;
+    font-family: "Font Awesome 6 free";
+    content: '\f054';
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #d1d3e2;
+}
+
+.b-shadow {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.08);
+}
